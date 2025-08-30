@@ -39,7 +39,7 @@ def upload_file():
             # Insertar en tabla existente
             df.to_sql("dim_clientes", con=engine, if_exists="append", index=False)
 
-            flash("✅ Datos cargados correctamente a la base de datos.")
+            flash(" Datos cargados correctamente a la base de datos.")
         except Exception as e:
             flash(f" Error al cargar datos: {e}")
 
